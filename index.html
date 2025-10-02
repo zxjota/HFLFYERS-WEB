@@ -4,52 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - BistroProfit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
+    /* 基础字体和页面样式 */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background: linear-gradient(135deg, #6EE7B7, #3B82F6); /* 渐变背景 */
       color: #333;
+      box-sizing: border-box;
     }
+
+    /* Header 样式 */
     header {
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 10;
     }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    /* 主体内容区域 */
     main {
-      padding: 20px;
-      background-color: white;
+      padding: 30px;
       max-width: 800px;
-      margin: 20px auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin: 40px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transform: translateY(-50px); /* 向上漂浮的卡片效果 */
     }
-    h1, h2 {
+
+    main h2 {
+      font-size: 24px;
+      font-weight: 500;
       color: #333;
+      margin-top: 20px;
     }
-    p {
-      line-height: 1.6;
+
+    main p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 20px;
     }
+
+    main ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    main ul li {
+      margin-bottom: 10px;
+    }
+
+    /* 联系我们部分的样式 */
+    .contact {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .contact a {
+      color: #3B82F6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* 页脚样式 */
     footer {
       text-align: center;
-      font-size: 0.8em;
+      font-size: 14px;
       color: #777;
-      padding: 10px 0;
+      padding: 15px 0;
       background-color: #333;
       color: white;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+      main {
+        padding: 20px;
+      }
+      main h2 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>BistroProfit Privacy Policy</h1>
   </header>
+
   <main>
     <section>
       <h2>Introduction</h2>
-      <p>At BistroProfit, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information about you when you use our application.</p>
+      <p>At BistroProfit, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information about you when you use our application. We encourage you to read it carefully.</p>
     </section>
 
     <section>
@@ -104,14 +168,16 @@
       <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page, and we will notify you if the changes are significant. Please check this page regularly to stay informed about our privacy practices.</p>
     </section>
 
-    <section>
+    <section class="contact">
       <h2>Contact Us</h2>
       <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
       <p><strong>Email:</strong> <a href="mailto:apps@ceibro.ee">apps@ceibro.ee</a></p>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 BistroProfit. All Rights Reserved.</p>
   </footer>
+
 </body>
 </html>
